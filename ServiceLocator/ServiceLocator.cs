@@ -6,7 +6,7 @@ namespace Internal.Codebase.ServiceLocator
 {
     public static class ServiceLocator
     {
-        public static Dictionary<Type, IService> Services;
+        private static Dictionary<Type, IService> Services;
 
         public static void Register<TService>(TService service) where TService : IService
         {
